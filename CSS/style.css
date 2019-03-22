@@ -1,0 +1,623 @@
+body{ /*para zera completamente as bordas do body */ 
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+p,h1,ul,li,h4{ /*para zera completamente para depois nao der erro */ 
+    padding: 0px;
+    margin: 0px;
+}
+a{ 
+    color: inherit;
+    cursor: pointer;
+} 
+a:link{ 
+    text-decoration:none; 
+} 
+input {
+	outline: none;
+}
+
+.tela{
+    width: 100%;
+    height: auto;
+    background-color:  white;
+}
+.header{
+    width: 100%;
+    height: 210px;
+    background-color: #fcfcfc;
+    
+    border-bottom: solid 1px #eaeaea;
+}
+
+.caixa_header{
+    width: 1355px;
+    height: 150px;
+    margin: auto;
+}
+.caixa_pesquisa{
+    width: 670px;
+    margin-left: -10px;
+    height:100px;
+    float: left;
+    padding-top: 100px;
+}
+
+
+input[type=search]{
+	background: #ededed;
+	border: solid 1px #fff;
+	padding: 13px 13px 13px 13px;
+	width: 450px;
+    margin-top: 35px ;
+    
+/*em outros navegadores */
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 1em;
+	
+}
+input[type=submit] {
+    background-color: darkviolet;
+    color: white;
+    padding: 8px 15px;
+    font-size: 15px;
+    border  : none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.caixa_logo{
+    width: 450px;
+    height: 110px;
+    background-image: url(../img/logo.png);
+    background-size: 395px;
+    background-repeat: no-repeat;   
+    float: left;
+    margin-top: 10px;
+}
+.caixa_redes{
+    width: 150px;
+    height: 50px;
+    float: left;
+    margin-top: 50px;
+}
+#caixa_face{
+    width: 50px;
+    height: 50px;
+     background-image: url(../img/facebook-logo.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    float: left;
+    cursor: pointer;
+}
+#caixa_insta{
+    width: 50px;
+    height: 50px;
+     background-image: url(../img/instagram.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+     float: left;
+    cursor: pointer;
+}
+#caixa_whats{
+     float: left;
+    width: 50px;
+    height: 50px;
+     background-image: url(../img/whatsapp.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+}
+.caixa_menu{
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    background-color: white;
+    padding-top: 30PX;
+}
+
+.caixa_menu_item{
+    width: 900px;
+    height: 100%;
+    margin: auto;
+    list-style: none;
+}
+
+.item{
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    float: left;
+    padding-top: 10px;
+    margin-top: -20PX;
+    font-family: Century Gothic;
+    font-size: 18px;
+    cursor: pointer;
+}
+.item:hover{
+   color: darkgray;
+    border-bottom: solid 2px #4a1d82;
+}
+
+/* conteudo do site */
+
+.section{
+    width: 1480px;
+     height: auto;
+    min-height: 800px;
+    margin: auto;
+     background-color: #F2F2F2;
+    padding-bottom: 150PX;
+    overflow: hidden;
+}
+.slide{
+    width: 1480px;
+    height: 430px;
+    background-color: white;
+}
+
+
+.caixa_conteudo{
+    width: 1350px;
+    height:380px;
+   margin-top: 20px;
+    border-radius: 5px;
+     
+}
+.caixa_vermais{
+   margin-left: 50px;
+    width: 100px;
+    color: forestgreen;
+    float: left;  
+    padding-top: 30px;
+    font-family: Century Gothic;
+    font-size: 20px;
+}
+.caixa_vermais:hover{
+    border-bottom: solid 2px #286d2a;
+    cursor: pointer;
+}
+.caixa_textotitulo{
+    width: 1150px;
+    height: 30px;
+    font-size: 25px;
+    font-family: Century Gothic;
+    color: dimgray;
+    padding: 25px;
+     float: left;
+}
+.caixa_jogo{
+    margin-left:40px;
+    width: 230px;
+    height:280px;
+    background-color:white;
+    border-radius: 10px;
+    float: left;
+}
+.caixa_jogo:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2), 0 6px 20px 0 rgba(0,0,0, 0.19);
+}
+.caixa_img{
+    width: 200px;
+    height: 180px;
+   padding-left: 30px;  
+    padding-top: 10px;
+}
+
+.caixa_titulo{
+    width: 100%;
+    height: 30px;
+    font-family: Century Gothic;
+    font-size: 25px;
+    margin-top: 15px;
+    text-align: center;
+}
+.caixa_subtitulo{
+    width: 100%;
+    height: 30px;
+    font-family: Century Gothic;
+    margin-top: 15px;
+    font-size: 20px;
+    padding-left: 10px;
+    color: orange;
+}
+
+.caixa_lojamaps{
+    width: 100%;
+    height: 50px;
+    font-family: Century Gothic;
+    font-size: 25px;
+    margin-top: 15px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.titulonossasLojas{
+    width: 1340px;
+    height: 100px;
+    background-color: #f2f2f2;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.footer{
+    width: 100%;
+    height:300px;
+    background-color: gainsboro;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    font-family: cursive;
+    color: #828282;
+    text-align: center;
+    
+}
+.caixa_informacoes{
+    width: 1350px;
+    height: 240px;
+    margin: auto;
+}
+
+
+h3{
+    color: #000;
+    font-family: corbel;
+    margin-left: 50px;
+}
+h5{
+    color: #a3a3a3;
+    font-family: corbel;
+    margin-left: 50px;
+    font-size: 13px;
+}
+
+.caixa_footer{
+    margin-top: 40px;
+    width: 300px;
+    height: 150px;
+    float: left;
+    margin-left: 100px;
+    
+}
+
+
+
+/* pagina x-box*/
+
+.caixa_menuitem{
+    width: 300px;
+    min-height: 800px;
+    height: auto;
+    float: left;
+}
+.menu_titulo{
+    width: 100%;
+    height: 50px;
+    color: darkblue;
+    font-family: corbel;
+    font-size: 35px;
+    padding-top: 25PX;
+    margin-left: 15px;
+}
+.topico_menu{
+    width: 250px;
+    height: 35px;
+    color: black;
+    font-family: corbel;
+    font-size: 23px;
+    padding-top: 25PX;
+    margin-left: 15px;
+    border-bottom: solid 1px #000  ;
+}
+
+.submenu{
+    height: auto; /*se zerar esse abre pra baixo*/
+    margin-top: 10px;
+    font-size: 18px;
+    width: 0px; /*para ter o opacity */
+    opacity: 0; /* para efeito de transição*/
+    transition: 1s;
+    overflow: hidden; /*ocultar o conteudo que tiver dentro*/
+    position: relative;
+    z-index: 999;
+}
+
+.item:hover >.submenu{
+    background-color: #d1cdca;
+    color: black;
+    transition: 1s;
+    cursor: pointer;
+    opacity: 1; /* para efeito de transição*/
+    width: 180px;
+    overflow: visible; 
+    
+}
+
+
+.sub_item{
+    width: 180px;
+    height: 40px;
+    background-color: #000;
+    margin-bottom: 0px;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+  
+}
+.sub_item:hover{
+    background-color: dimgray;
+   color:white;
+    
+}
+
+
+
+.tituloProduto{
+     width: 100%;
+    height: 40px;
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    font-family: Century Gothic;
+    color: darkslateblue;
+    text-align: center;
+    float: left;
+    
+}
+.caixa_produto{
+    margin-top: 50px;
+    margin-left:30px;
+    width: 200px;
+    height:300px;
+    background-color:white;
+    border-radius: 10px;
+    float: left;
+    cursor: pointer;
+}
+.caixa_produto:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2), 0 6px 20px 0 rgba(0,0,0, 0.19);
+}
+.caixa_imgPro{
+    width: 200px;
+    height: 180px;
+    padding-left: 10px;  
+    padding-top: 10px;
+}
+
+.caixa_tituloPro{
+    width: 100%;
+    height: 30px;
+    font-family: Century Gothic;
+    font-size: 22px;
+    margin-top: 15px;
+    padding-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.caixa_tituloPro:hover{
+    color: orange;
+}
+.caixa_subtituloPro{
+    width: 100%;
+    height: 30px;
+    font-family: Century Gothic;
+    margin-top: 15px;
+    font-size: 18px;
+    padding-left: 10px;
+    color: orange;
+}
+.avaliacao{
+    width: 100%;
+    height: 30px;
+    font-family: Century Gothic;
+    margin-top: 15px;
+    font-size: 40px;
+    color: yellow;
+    text-align: center;
+}
+
+
+/* tela de produto */
+h1{
+    font-family: century gothic;
+    font-size: 25px;
+    color: orange;
+}
+.caixa_conteudoProduto{
+    width: 400px;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 50px;
+    float: left;
+}
+.caixa_descricao{
+    width: 850px;
+    height: 380px;  
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.descricao{
+    font-family: century gothic;
+    font-size: 19px;
+    text-align: justify;
+}
+
+.lojasProdutos{
+    width: 1300px;
+    height: 600px;
+    float: left;
+    margin-left: 80px;
+    padding: 10px;
+    
+}
+.caixa_mapsPro{
+    width: 700px;
+    height: 1300px;
+    float: left;
+    padding: 5px;
+    margin-top: 10px;
+}
+.caixa_loja{
+    width: 200px;
+    height: 100px;
+    background-color: lightgray;
+    border-radius: 6px;
+    margin-left: 15px;
+    padding: 10px;
+    font-family: century gothic;
+    font-size: 17px;
+    
+}
+.caixa_loja:hover{
+     box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2), 0 6px 20px 0 rgba(0,0,0, 0.19);
+}
+
+/* tela nossas lojas*/
+.section_conteudoLojas{
+     width: 1300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgrey;
+    overflow:hidden; 
+}
+#conteudo_lojas{
+    padding-top: 100px;
+    width: 1300px;
+    background-color: white;
+    height:auto; 
+}
+
+.caixa_pesquisaLoja{
+    width: 400px;
+    background-color: lightgrey;
+    height:700px;
+    color: gray;
+    font-size: 20PX;
+    font-family: monospace;
+    padding: 50PX;
+    float: left;
+    
+}
+.caixa_inputPesquisa{
+    width: 300px;
+    height: auto;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.caixa_maps2{
+    width: 800px;
+    height:300px;
+    background-repeat: no-repeat;
+    font-size: 20PX;
+    font-family: monospace;
+    float: left;
+}
+
+#btn_pesquisar{
+    background-color: gray;
+    color: white;
+    width: 320px;
+    height: 45px;
+    font-size: 16px;
+    border  : none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.caixa_locais{
+    margin-top: 60px;
+    width: 350px;
+    height: 70px;
+    background-color: white;
+    border-radius: 8px;
+    
+}
+.img_local{
+    width: 50px;
+    height: 70px;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.local{
+    margin-top: 10px;
+    width: 300px;
+    height: 70px;
+    float: left;
+    font-size: 16px;
+}
+.caixa_locais:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2), 0 6px 20px 0 rgba(0,0,0, 0.19);
+}
+
+/* nossas lojas */
+.nossasLojas{
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-family: century gothic;
+}
+.caixa_nossasloja{
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    margin-top: 30px;
+    font-family: century gothic;
+    font-size: 20px;
+    border-radius: 15px;
+    float: left;
+    padding: 20px;
+    margin-left: 20px;
+}
+.caixa_itemLoja{
+    width: 1000px;
+    height: auto;
+    margin-left: 30px;
+}
+.caixa_nossasloja:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2), 0 6px 20px 0 rgba(0,0,0, 0.19);
+}
+
+.mapsNossasLojas{
+    width: 1000px;
+    height: 800px;
+    background-color: dimgrey;
+    margin-top: 50px;
+    float: left;
+    margin-left: 240px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

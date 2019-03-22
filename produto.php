@@ -1,15 +1,7 @@
 <?php 
+    //conexao
   require_once("conexao.php");
   $conexao=conexaoBD();
-
-
-    // if(isset($_GET['produto'])){
-    //     $sql = "SELECT * FROM tbl_produto WHERE idproduto=".$_GET['produto'];
-    // }
-
-    
-
-  
 ?>
 
 <!DOCTYPE html>
@@ -42,6 +34,7 @@
             <section class="section" >
                  <div class="caixa_menu">
                  <div class="caixa_menu_item">
+                     <!-- select para pegar os jogos da tabela  --> 
                         <?php
                             $sqlCat="SELECT  * FROM tbl_console";
                         
@@ -105,12 +98,13 @@
                   
                     <br>
                     <div class="caixa_mapsPro">
-                    <iframe src="<?php echo($rsloja['endmaps'])?>" width="1300" height="350"  style="border:0" allowfullscreen></iframe>
+                        <!-- colocando o echo no local onde seria o https do link do maps 
+                            copiei o html do maps e coloquei a parte de https no banco
+--> 
+                        <iframe src="<?php echo($rsloja['endmaps'])?>" width="1300" height="350"  style="border:0" allowfullscreen></iframe>
                     </div>
-                    
-                    
                   <?php
-               }
+                }
                }
                   ?>  
                 </div>

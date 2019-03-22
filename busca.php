@@ -1,12 +1,7 @@
 <?php 
+    // conexao com o banco
   require_once("conexao.php");
   $conexao=conexaoBD();
-
-
-     
-    
-
-  
 ?>
 
 <!DOCTYPE html>

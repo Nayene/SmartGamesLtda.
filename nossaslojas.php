@@ -2,6 +2,7 @@
     require_once("conexao.php");
     $conexao=conexaoBD();
 
+    // verificando se existe essa variavel
     if(isset($_GET['localizacao'])){
          $sql = "SELECT endmaps FROM tbl_loja WHERE idloja=".$_GET['localizacao'];
         
@@ -40,6 +41,7 @@
             <section class="section" >
                  <div class="caixa_menu">
                  <div class="caixa_menu_item">
+                     
                         <?php
                             $sqlCat="SELECT  * FROM tbl_console";
                         
@@ -67,6 +69,7 @@
                  
             
                 <div class="caixa_itemLoja">
+                    <!-- select para pegar as lojas existentes no banco  --> 
                  <?php
                     $sql = "SELECT * FROM tbl_loja ORDER BY idloja DESC";
 
@@ -80,6 +83,7 @@
                 ?>
                     <a href="nossaslojas.php?localizacao=<?php echo($rsLojas['idloja'])?>">
                         <div class="caixa_nossasloja">
+                            <!-- contatenando as variaveis para o endereço  --> 
                             <?php echo($rsLojas['nome'].'-'.$rsLojas['rua'].'-'. $rsLojas['bairro'].'-'.$rsLojas['cidade'].'-'.$rsLojas['estado'])?> 
                         </div>
                     </a>
@@ -90,6 +94,9 @@
               
                 <div class="mapsNossasLojas">
                     <div class="caixa_maps">
+                        <!-- colocando o echo no local onde seria o https do link do maps 
+                            copiei o html do maps e coloquei a parte de https no banco
+--> 
                         <iframe src="<?php echo($rsmaps['endmaps'])?>" width="1000" height="800"  style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>

@@ -1,16 +1,19 @@
 <?php 
+    // conexao banco 
   require_once("conexao.php");
   $conexao=conexaoBD();
 
-
+    // verificando se existe essa variavel
     if(isset($_GET['produto'])){
         $sql = "SELECT * FROM tbl_produto WHERE idproduto=".$_GET['produto'];
     }
 
+    // verificando se existe essa variavel
     if(isset($_GET['loja'])){
         $sql = "SELECT * FROM tbl_produto WHERE idloja=".$_GET['loja'];
     }
-    
+
+    // verificando se existe essa variavel
      if(isset($_GET['console'])){
         $sql = "SELECT * FROM tbl_console WHERE idconsole=".$_GET['console'];
         

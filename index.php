@@ -1,28 +1,12 @@
 <?php
-
+    // conexao com o banco
     require_once("conexao.php");
     $conexao=conexaoBD();
 
     
-
+    // verificando se existe essa variavel 
     if(isset($_GET['console'])){
-        $sql = "SELECT * FROM tbl_console WHERE idconsole=".$_GET['console'];
-        
-        // $sqlconsole="select * from tbl_console where idconsole=".$_GET['console'];
-        // $console = mysqli_query($conexao,$sqlconsole);
-        
-        // if($rsConsole = mysqli_fetch_array($console)){
-        //     session_start();
-        //     $_SESSION['nome'] = $rsConsole['nome'];
-        //     $_SESSION['idconsole'] = $rsConsole['idconsole'];
-        //     //echo( $_SESSION['nome']);
-        //     header('location:categoria.php');
-        
-        // }else{
-          
-        //     echo('ta pegano nao ');
-        // }
-        
+        $sql = "SELECT * FROM tbl_console WHERE idconsole=".$_GET['console']; 
     }
 
    
@@ -42,6 +26,7 @@
 	</head>
     <body>
         <div class="tela">
+            <!-- cabeçario --> 
             <header class="header">
                 <div class="caixa_header">
                     <a href="index.php"><div class="caixa_logo"></div></a>
@@ -58,11 +43,12 @@
                     </div>
                 </div>
             </header>
-            
+            <!-- conteudo --> 
             <section class="section" >
                 <div class="caixa_menu">
 
                     <div class="caixa_menu_item">
+                        <!-- select para pegar o nome do console para o menu  --> 
                         <?php
                             $sqlCat="SELECT  * FROM tbl_console";
                         
@@ -85,9 +71,8 @@
 
                     </div>
                 
-                
+                <!-- slide --> 
                 <div class="slide">
-	
                     <div id="wowslider-container0">
                         <div class="ws_images"><ul>
                             <li><img src="img/slide1.jpg" alt="imagem slide" title="" id="wows0_0"/></li>
@@ -110,7 +95,7 @@
              
 
                 
-                
+                <!-- jogos --> 
                  <div class="caixa_conteudo">
                     <div class="caixa_textotitulo">
                           Jogos Populares do X-Box 360
@@ -119,6 +104,7 @@
                     <div class="caixa_vermais">
                         <a href="categoria.php">Veja Mais</a>
                     </div>
+                     <!-- select para pegar os jogos da tabela produtos segundo o id  --> 
                      <?php
                         $sql="SELECT * FROM tbl_produto WHERE idconsole = 1 LIMIT 5;";
                          
@@ -157,7 +143,9 @@
                     <div class="caixa_vermais">
                         <a href="categoria.php">Veja Mais</a>
                     </div>
+                     <!-- select para pegar os jogos da tabela produtos segundo o id  --> 
                      <?php
+                    
                         $sql="SELECT * FROM tbl_produto WHERE idconsole = 3 LIMIT 5;";
                          
                         $select = mysqli_query($conexao,$sql);
@@ -195,6 +183,7 @@
                     <div class="caixa_vermais">
                         <a href="categoria.php">Veja Mais</a>
                     </div>
+                     <!-- select para pegar os jogos da tabela produtos segundo o id  --> 
                      <?php
                         $sql="SELECT * FROM tbl_produto WHERE idconsole = 2 LIMIT 5;";
                          
